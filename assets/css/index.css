@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    min-height: 16px;
+}
+
+
+.navbar-menu {
+    padding: 8px;
+}
+.navbar-menu > a {
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-menu-item {
+    padding: 16px;
+    cursor: pointer;
+}
+
+.navbar-menu-item:hover {
+    background-color: rgba(255, 193, 34, .22);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn {
+    font-family: 'Roboto', sans-serif;
+    border: 1px;
+    border-radius: 0px;
+    padding: 8px;
+    color: white;
+    background-color: #59B0F4;
+}
+
+.card {
+    width: 400px;
+    height: auto;
+}
