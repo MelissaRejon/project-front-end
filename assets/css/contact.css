@@ -1,0 +1,51 @@
+.navbar {
+    padding: 0;
+    background-color: rgba(9, 9, 9, .08);
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:  36px 352px 72px 352px;
+    background-color: rgba(9, 9, 9, .08);
+}
+
+.jumbotron > h1{
+    font-size: 64px;
+    font-weight: normal;
+}
+
+.jumbotron > h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+form > input, form > textarea  {
+    width: 896px;
+    height: 64px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    font-size: 20px;
+}
+
+form > button {
+    border: none;
+    background-color: #000000;
+    color: #ffffff;
+    width: 176px;
+    height: 64px;
+}
+
+textarea {
+    padding-top: 16px;
+    font-family: 'Roboto', sans-serif;
+    height: 128px !important;
+}
