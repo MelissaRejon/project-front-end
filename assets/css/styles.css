@@ -8,6 +8,10 @@
   font-weight: 100;
 }
 
+.labels-contact {
+  display: none;
+}
+
 .folder {
   background-color: rgba(196, 196, 196, .10);
 }
@@ -37,11 +41,10 @@
 }
 
 .mini-card {
+  width: 152px;
   display: flex;
   justify-content: space-evenly;
-  align-items: flex-start;
   flex-direction: column;
-  margin-right: 16px;
   min-height: 100px;
   background-color: rgba(38, 107, 171, .20);
   color: #000000;
@@ -54,7 +57,7 @@
   background-color: rgba(38, 107, 171, .65);
 }
 
-.navbar {
+.navbar-gray {
   padding: 0;
   background-color: rgba(9, 9, 9, .08);
 }
@@ -458,6 +461,17 @@ footer {
   margin-left: 80px;
 }
 
+.valiator {
+  color: red;
+}
+
+.label-input {
+  font-size: 16px;
+  font-weight: bold;
+  align-self: flex-start;
+  margin-bottom: 8px;
+}
+
 @media (max-width: 768px) {
   .contact-us,
   .ceo-dot,
@@ -580,6 +594,74 @@ footer {
     height: 36px;
     margin-left: 80px;
   }
+
+  .mini-card-section {
+    flex-direction: column;
+  }
+
+  .folder {
+    justify-content: flex-end;
+  }
+
+  .mini-card {
+    width: 440px;
+    margin-bottom: 16px;
+  }
+
+  .title-contact-us {
+    font-size: 32px;
+  }
+
+  .services-btn {
+    width: 216px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: block;
+  }
+
+  .folder > .column > h5, .folder > .column > p{
+    display: none;
+  }
+
+  .labels-contact {
+    display: block;
+  }
+
+  .title-form {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 32px;
+  }
+
+  .navbar-gray {
+    background-color: #FFFFFF;
+  }
+
+  .jumbotron {
+    display: none;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  form > input, form > textarea  {
+    width: 440px;
+    height: 32px;
+    border: #000000 1px solid;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    font-size: 20px;
+  }
+  
+  form > button {
+    display: none;
+  }
 }
 
 @media (max-width: 425px) {
@@ -631,7 +713,7 @@ footer {
     z-index: 1;
     width: 100% !important;
   }
-  /* , .menu-list */
+
   .navbar-menu {
     display: none;
   }
@@ -742,5 +824,38 @@ footer {
     width: 32px;
     height: 32px;
     margin: 0;
+  }
+
+  .mini-card-section {
+    flex-direction: column;
+  }
+
+  .mini-card {
+    width: 352px;
+    margin-bottom: 16px;
+  }
+
+  .title-contact-us {
+    padding-left: 8px;
+    font-size: 32px;
+  }
+
+  .services-btn {
+    width: 164px !important;
+    height: 40px !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    display: block;
+  }
+
+  form > input, form > textarea  {
+    width: 360px;
+    height: 32px;
+    border: #000000 1px solid;
+    border-radius: 5px;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    font-size: 20px;
   }
 }
