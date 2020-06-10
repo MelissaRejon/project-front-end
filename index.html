@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&family=Roboto:ital,wght@0,400;0,700;1,500&display=swap"
       rel="stylesheet"
@@ -25,11 +25,34 @@
         <a href="pages/service.html" class="navbar-menu-item">Service</a>
         <a href="pages/contact.html" class="navbar-menu-item">Contact</a>
       </div>
+      <div class="sidebar">
+        <img
+          id="menu-list-buttom"
+          class="menu-icon"
+          src="assets/images/bars.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
     </nav>
+    <div id="menu-sidebar" class="sidebar-menu">
+      <img
+        id="close-menu-sidebar"
+        class="close-buttom"
+        src="assets/images/times.svg"
+        alt=""
+        srcset=""
+      />
+      <div class="menu-list">
+        <a href="#" class="navbar-menu-item">Home</a>
+        <a href="pages/service.html" class="navbar-menu-item">Service</a>
+        <a href="pages/contact.html" class="navbar-menu-item">Contact</a>
+      </div>
+    </div>
     <div class="container">
-      <div class="row align-center">
-        <div class="md1"></div>
-        <div class="column md5">
+      <div class="row align-center header-page">
+        <div class="xs1 md1"></div>
+        <div class="column xs12 md5">
           <h3>We write code.</h3>
           <h1 style="font-weight: bold;">You just rest ;)</h1>
           <p>
@@ -48,7 +71,7 @@
             the future.
           </p>
         </div>
-        <div class="column md5">
+        <div class="column xs12 md5">
           <img
             class="image-rsp"
             src="assets/images/terminal-image.svg"
@@ -59,8 +82,7 @@
     </div>
     <div class="container" style="background-color: #f2f1f1;">
       <div class="row">
-        <div class="md1"></div>
-        <div class="column md4">
+        <div class="column xsl12 md4">
           <div class="row">
             <h1 style="margin-bottom: 8px;">Melissa Rejón</h1>
           </div>
@@ -70,24 +92,25 @@
             </h4>
           </div>
           <div class="row justify-center">
-            <img src="assets/images/co_image.svg" alt="" />
+            <img class="ceo-dot" src="assets/images/co_image.svg" alt="" />
           </div>
         </div>
-        <div class="column md6">
+        <div class="column xsl7 md6">
           <div class="phrase">
             “En tiempos de guerra cualquier hoyo es trinchera. Frase vacia,
             Frase vacia, Frase vacia, Frase vacia Frase vaciaFrase vacia.”
           </div>
         </div>
-        <div class="md1"></div>
       </div>
     </div>
     <div class="container" style="background-color: #f2f1f1;">
-      <h2>HUNDREDS OF STARTUP & ENTERPRISE CLIENTS.</h2>
-      <h2 style="color: #266bab;">RATED #1 IN WEB DEVELOPMENT</h2>
+      <h2 class="title_hundreds">HUNDREDS OF STARTUP & ENTERPRISE CLIENTS.</h2>
+      <h2 class="f-s-40" style="color: #266bab;">
+        RATED #1 IN WEB DEVELOPMENT
+      </h2>
     </div>
-    <div class="container" style="background-color: #f2f1f1;">
-      <div class="row">
+    <div class="container overflow-x" style="background-color: #f2f1f1;">
+      <div class="row card-section">
         <div class="card">
           <div class="card-header">
             <div class="type">
@@ -194,32 +217,51 @@
     </div>
     <div class="container" style="background-color: #f2f1f1;">
       <h2 style="color: #266bab; margin-bottom: 24px;">Services</h2>
-      <div class="row">
-        <div class="column md4">
-          <div class="services-card" style="background-color: #FFC122;">
+    </div>
+    <div
+      id="services"
+      class="container overflow-x"
+      style="background-color: #f2f1f1;"
+    >
+      <div id="left-navigation" class="arrow-navigation">
+        <img
+          class="chevron"
+          src="assets/images/chevron-left.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
+      <div class="row service-section">
+        <div class="column xsl12 md4">
+          <div class="services-card" style="background-color: #ffc122;">
             <h1>Front End Design</h1>
-            <img src="assets/images/rulete.svg" alt="" srcset="">
+            <img src="assets/images/rulete.svg" alt="" srcset="" />
           </div>
         </div>
-        <div class="column md4">
-          <div class="services-card" style="background-color: #266BAB;">
+        <div class="column xsl12 md4">
+          <div class="services-card" style="background-color: #266bab;">
             <h1>Quality Assurance</h1>
-            <img src="assets/images/qa.svg" alt="" srcset="">
+            <img src="assets/images/qa.svg" alt="" srcset="" />
           </div>
         </div>
-        <div class="column md4">
+        <div class="column xsl12 md4">
           <div class="services-card" style="background-color: #000000;">
             <h1>Software Development</h1>
-            <img src="assets/images/software-dev.svg" alt="" srcset="">
+            <img src="assets/images/software-dev.svg" alt="" srcset="" />
           </div>
         </div>
       </div>
-      
-
-
+      <div id="right-navigation" class="arrow-navigation">
+        <img
+          class="chevron"
+          src="assets/images/chevron-right.svg"
+          alt=""
+          srcset=""
+        />
+      </div>
     </div>
     <div class="container" style="background-color: #f2f1f1;">
-      <div class="floating-button">
+      <div id="up-navigation" class="floating-button">
         <img src="assets/images/chevron-up.svg" alt="" />
       </div>
     </div>
@@ -235,4 +277,5 @@
       </div>
     </footer>
   </body>
+  <script src="assets/js/index.js"></script>
 </html>
