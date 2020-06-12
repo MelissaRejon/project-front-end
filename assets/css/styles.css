@@ -881,7 +881,7 @@ footer {
   .folder {
     flex-direction: column;
   }
-
+  
   form > input,
   form > textarea {
     width: 80%;
