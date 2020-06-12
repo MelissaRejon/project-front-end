@@ -8,9 +8,8 @@
   font-weight: 100;
 }
 
-.labels-contact {
-  display: none;
-}
+/* .labels-contact {
+} */
 
 .folder {
   background-color: rgba(196, 196, 196, 0.1);
@@ -89,17 +88,21 @@ form {
 
 form > input,
 form > textarea {
+  border: #000000 1px solid;
+  border-radius: 5px;
   width: 64vw;
-  height: 64px;
+  height: 48px;
   margin-bottom: 24px;
-  padding-left: 24px;
-  font-size: 20px;
+  padding-left: 16px;
+  font-size: 16px;
 }
 
 form > button {
+  font-family: "Roboto", sans-serif;
   border: none;
-  background-color: #000000;
+  background-color: #ffc122;
   color: #ffffff;
+  font-size: 16px;
   width: 176px;
   height: 64px;
 }
@@ -473,9 +476,23 @@ footer {
   margin-bottom: 8px;
 }
 
+@media (max-width: 1092px) {
+  .jumbotron {
+    display: none;
+  }
+
+  .navbar-gray {
+    background-color: #ffffff;
+  }
+}
+
 @media (max-width: 1000px) {
   .folder {
     justify-content: flex-end;
+  }
+
+  .services-btn {
+    width: 16vw !important;
   }
 
   .mini-card {
@@ -644,14 +661,6 @@ footer {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 32px;
-  }
-
-  .navbar-gray {
-    background-color: #ffffff;
-  }
-
-  .jumbotron {
-    display: none;
   }
 
   form {
